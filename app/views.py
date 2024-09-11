@@ -10,7 +10,7 @@ def home(request):
         form = StudentForm(request.POST,request.FILES)
         if form.is_valid():
             form.save()
-            msg = "registration Succsessfully"
+            msg = "Registration succsessfully"
         else:
             msg = "Please enter proper data"
 
