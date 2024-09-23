@@ -10,9 +10,9 @@ def home(request):
         form = StudentForm(request.POST,request.FILES)
         if form.is_valid():
             form.save()
-            msg = "registration Succsessfully"
+            msg = "Registration Succsessfully"
         else:
-            msg = "Please enter proper data"
+            msg = "please enter proper data"
 
     return render(request,'home.html',{'form':form,'msg':msg})
 
