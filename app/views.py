@@ -12,7 +12,7 @@ def home(request):
             form.save()
             msg = "Registration Succsessfully"
         else:
-            msg = "please enter proper data"
+            msg = "Please enter Proper Data"
 
     return render(request,'home.html',{'form':form,'msg':msg})
 
